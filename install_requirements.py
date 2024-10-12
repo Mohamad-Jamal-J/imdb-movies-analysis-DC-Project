@@ -12,4 +12,4 @@ for module in REQUIRED_MODULES:
         subprocess.run(["pip", "install", module])
         print(f"Module {module} installed ✅")
     except subprocess.CalledProcessError as e:
-        print(f"Error installing {module}: {e}")
+        print(f"While installing {module}: {e}")
